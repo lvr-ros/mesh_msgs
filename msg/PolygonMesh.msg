@@ -1,2 +1,2 @@
-PolygonIndices[] triangles
+PolygonIndices[] polygons
 geometry_msgs/Point[] vertices
