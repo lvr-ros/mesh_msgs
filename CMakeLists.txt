@@ -4,6 +4,7 @@ project(mesh_msgs)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   geometry_msgs
+  sensor_msgs
   message_generation
 )
 
@@ -20,6 +21,7 @@ TriangleMeshStamped.msg
 generate_messages(
   DEPENDENCIES
   geometry_msgs
+  sensor_msgs
 )
 
 catkin_package(
@@ -27,4 +29,5 @@ catkin_package(
   CATKIN_DEPENDS
     roscpp
     geometry_msgs
+    sensor_msgs
 )

@@ -1,5 +1,11 @@
-# Definition of a triangle mesh
-# list of triangles; the index values refer to positions in vertices[]
-TriangleIndices[] triangles
-# the actual vertices that make up the mesh
-geometry_msgs/Point[] vertices
+## Definition of a triangle mesh
+
+TriangleIndices[] triangles # list of triangles; the index values refer to positions in vertices (and vertex_normals, if given)
+geometry_msgs/Point[] vertices # the actual vertices that make up the mesh
+#optional:
+geometry_msgs/Point[] vertex_normals
+std_msgs/ColorRGBA[] vertex_colors
+geometry_msgs/Point[] vertex_texture_coords
+mesh_msgs/Material[] face_materials
+sensor_msgs/Image[] textures
+mesh_msgs/Cluster[] clusters
