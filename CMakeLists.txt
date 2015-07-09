@@ -16,6 +16,8 @@ PolygonMeshStamped.msg
 TriangleIndices.msg
 TriangleMesh.msg
 TriangleMeshStamped.msg
+Material.msg
+Cluster.msg
 )
 
 generate_messages(
